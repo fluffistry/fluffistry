@@ -1,3 +1,4 @@
+alert("SCRIPT LOADED");
 /* =======================================
    FLUFFISTRY V1.0
    JavaScript
@@ -574,93 +575,29 @@ console.log("Fluffistry V1.0 Loaded Successfully");
 
 document.addEventListener("DOMContentLoaded", () => {
 
-const cursor = document.querySelector(".custom-cursor");
+    const cursor = document.querySelector(".custom-cursor");
 
-document.addEventListener("mousemove",(e)=>{
+    if (!cursor) return;
 
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-
-});
-
-document.querySelectorAll("a, button").forEach(item=>{
-
-    item.addEventListener("mouseenter",()=>{
-
-        cursor.classList.add("active");
-
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
     });
 
-    item.addEventListener("mouseleave",()=>{
+    document.querySelectorAll("a, button").forEach(item => {
 
-        cursor.classList.remove("active");
+        item.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+        });
 
-    });
-
-});
-
-});
-
-document.addEventListener("mousemove",(e)=>{
-
-    cursor.style.left = e.clientX + "px";
-
-    cursor.style.top = e.clientY + "px";
-
-});
-
-document.querySelectorAll("a, button").forEach(item=>{
-
-    item.addEventListener("mouseenter",()=>{
-
-        cursor.classList.add("active");
-
-    });
-
-    item.addEventListener("mouseleave",()=>{
-
-        cursor.classList.remove("active");
-
-    });
-
-});
-console.log("Custom Cursor Loaded");
-// ==========================
-// EmailJS Contact Form
-// ==========================
-
-(function () {
-    emailjs.init({
-        publicKey: "HT9LI8flzrmUIjvBO",
-    });
-})();
-
-const contactForm = document.getElementById("contact-form");
-
-if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        emailjs.sendForm(
-            "service_108ig3o",
-            "template_w6ymozr",
-            this
-        )
-        .then(function () {
-
-            alert("✅ Message sent successfully!");
-
-            contactForm.reset();
-
-        })
-        .catch(function (error) {
-
-            console.error(error);
-
-            alert("❌ Failed to send message.");
-
+        item.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
         });
 
     });
-}
+
+});
+
+console.log("Custom Cursor Loaded");// ==========================
+
+console.log("END OF SCRIPT");
