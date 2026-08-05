@@ -1,4 +1,3 @@
-alert("SCRIPT LOADED");
 /* =======================================
    FLUFFISTRY V1.0
    JavaScript
