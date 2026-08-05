@@ -333,33 +333,14 @@ document.addEventListener("keydown",(e)=>{
    Mobile Navigation
 ======================================= */
 
-const menuButton = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-links");
+const menu=document.getElementById("mobile-menu");
+const nav=document.getElementById("nav-links");
 
-if(menuButton && navMenu){
+menu.addEventListener("click",()=>{
 
-    menuButton.addEventListener("click",()=>{
+nav.classList.toggle("open");
 
-        navMenu.classList.toggle("open");
-
-        menuButton.classList.toggle("active");
-
-    });
-
-    document.querySelectorAll(".nav-links a").forEach(link=>{
-
-        link.addEventListener("click",()=>{
-
-            navMenu.classList.remove("open");
-
-            menuButton.classList.remove("active");
-
-        });
-
-    });
-
-}
-
+});
 /* =======================================
    Close Menu When Clicking Outside
 ======================================= */
