@@ -332,54 +332,36 @@ document.addEventListener("keydown",(e)=>{
    Mobile Navigation
 ======================================= */
 
-const menu=document.getElementById("mobile-menu");
-const nav=document.getElementById("nav-links");
+const menu = document.getElementById("mobile-menu");
+const nav = document.getElementById("nav-links");
 
-menu.addEventListener("click",()=>{
+if (menu && nav) {
 
-nav.classList.toggle("open");
+    menu.addEventListener("click", () => {
 
-});
-/* =======================================
-   Close Menu When Clicking Outside
-======================================= */
+        nav.classList.toggle("open");
 
-document.addEventListener("click",(e)=>{
+    });
 
-    if(!menuButton || !navMenu) return;
+}
 
-    if(
-        !navMenu.contains(e.target) &&
-        !menuButton.contains(e.target)
-    ){
-
-        navMenu.classList.remove("open");
-
-        menuButton.classList.remove("active");
-
-    }
-
-});
 
 /* =======================================
-   Prevent Multiple Rapid Clicks
+   Close Mobile Menu When Clicking Outside
 ======================================= */
 
-let menuBusy = false;
+if (menu && nav) {
 
-if(menuButton){
+    document.addEventListener("click", (e) => {
 
-    menuButton.addEventListener("click",()=>{
+        if (
+            !menu.contains(e.target) &&
+            !nav.contains(e.target)
+        ) {
 
-        if(menuBusy) return;
+            nav.classList.remove("open");
 
-        menuBusy = true;
-
-        setTimeout(()=>{
-
-            menuBusy = false;
-
-        },300);
+        }
 
     });
 
