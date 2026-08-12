@@ -261,7 +261,7 @@ buttons.forEach((button) => {
    Portfolio Image Lightbox
 ======================================= */
 
-const portfolioItems = document.querySelectorAll(".portfolio-item img");
+const portfolioItems = document.querySelectorAll(".portfolio-item img, .gallery-card img");
 
 // Create Lightbox
 
@@ -403,19 +403,25 @@ images.forEach((img) => {
 
 const loader = document.querySelector(".loader");
 
+function hideLoader(){
+
+    if(loader && !loader.classList.contains("hide")){
+
+        loader.classList.add("hide");
+
+    }
+
+}
+
 window.addEventListener("load", () => {
 
-    setTimeout(() => {
-
-        if(loader){
-
-            loader.classList.add("hide");
-
-        }
-
-    },600);
+    setTimeout(hideLoader, 600);
 
 });
+
+// Safety net: never let the loader stay stuck for more than 4s,
+// even if a slow/blocked resource delays the window load event.
+setTimeout(hideLoader, 4000);
 
 /* =======================================
    Disable Right Click
