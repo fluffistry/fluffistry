@@ -1596,7 +1596,17 @@ footer{
 }
     .hero{
 
-        height:90vh;
+        height:auto;
+
+        aspect-ratio:16/9;
+
+    }
+
+    .hero-video{
+
+        object-fit:cover;
+
+        object-position:center;
 
     }
 
