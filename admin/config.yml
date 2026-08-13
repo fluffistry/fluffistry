@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: fluffistry/fluffistry
+  branch: main
+  base_url: https://fluffistry.vercel.app
+  auth_endpoint: api/auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    files:
+      - name: "portfolio"
+        label: "Portfolio Gallery"
+        file: "content/portfolio.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{title}} ({{category}})"
+            fields:
+              - {label: "Category", name: "category", widget: "select", options: ["Fursuit", "Reference Sheet"]}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+  - name: "pricing"
+    label: "Pricing"
+    files:
+      - name: "pricing"
+        label: "Pricing Plans"
+        file: "content/pricing.json"
+        fields:
+          - label: "Reference Sheets"
+            name: "reference_sheets"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Starting Price", name: "starting_price", widget: "string"}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
+          - label: "Custom Fursuits"
+            name: "custom_fursuits"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Starting Price", name: "starting_price", widget: "string"}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
