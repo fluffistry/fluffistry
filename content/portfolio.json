@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "category": "Fursuit",
+      "title": "Arctic Wolf",
+      "description": "A premium custom fursuit crafted with attention to detail, comfort, and realistic expression.",
+      "image": "/images/fursuit1.jpg"
+    },
+    {
+      "category": "Reference Sheet",
+      "title": "Character Design",
+      "description": "A professional full-body reference sheet showcasing every important detail of the character.",
+      "image": "/images/refsheet1.jpg"
+    },
+    {
+      "category": "Fursuit",
+      "title": "Red Fox",
+      "description": "Built using premium materials with expressive features and durable craftsmanship.",
+      "image": "/images/fursuit2.jpg"
+    },
+    {
+      "category": "Reference Sheet",
+      "title": "Fantasy Character",
+      "description": "A clean and detailed reference sheet designed to showcase colors, markings, and character personality.",
+      "image": "/images/refsheet2.jpg"
+    },
+    {
+      "category": "Fursuit",
+      "title": "Snow Leopard",
+      "description": "A handcrafted custom suit featuring premium faux fur, expressive styling, and high-quality finishing.",
+      "image": "/images/fursuit3.jpg"
+    },
+    {
+      "category": "Reference Sheet",
+      "title": "Original Fursona",
+      "description": "A professional design sheet created for artists, makers, and future fursuit production.",
+      "image": "/images/refsheet3.jpg"
+    }
+  ]
+}
