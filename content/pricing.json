@@ -1,0 +1,24 @@
+{
+  "reference_sheets": {
+    "title": "Reference Sheets",
+    "starting_price": "$100+",
+    "features": [
+      "Front & Back View",
+      "Color Palette",
+      "Detail Close-Ups",
+      "High Resolution",
+      "Personal Use License"
+    ]
+  },
+  "custom_fursuits": {
+    "title": "Custom Fursuits",
+    "starting_price": "Custom Quote",
+    "features": [
+      "Fully Custom Design",
+      "Premium Faux Fur",
+      "Comfortable Interior",
+      "Progress Updates",
+      "Worldwide Shipping"
+    ]
+  }
+}
