@@ -54,6 +54,23 @@ fetch("content/portfolio.json")
             cardObserver.observe(card);
         });
 
+        // Fix: newly-inserted images are invisible by default (site-wide
+        // lazy-load CSS sets opacity:0 until a "loaded" class is added).
+        // script.js only watches images that existed at page load, so these
+        // dynamically-added ones need their own observer to ever become visible.
+        const imgObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("loaded");
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        grid.querySelectorAll("img").forEach((img) => {
+            imgObserver.observe(img);
+        });
+
     })
     .catch((err) => {
         console.error("Could not load portfolio.json", err);
