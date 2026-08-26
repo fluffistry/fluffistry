@@ -203,7 +203,7 @@ window.addEventListener("scroll", () => {
     if(heroVideo){
 
         heroVideo.style.transform =
-        `translate(-50%,-50%) scale(1.08) translateY(${scroll * 0.15}px)`;
+        `scale(1.08) translateY(${scroll * 0.15}px)`;
 
     }
 
