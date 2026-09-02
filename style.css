@@ -2250,6 +2250,117 @@ body{
 
 }
 
+/* Multi-image gallery cards */
+
+.image-count{
+
+    position:absolute;
+
+    top:16px;
+
+    right:16px;
+
+    background:rgba(0,0,0,.6);
+
+    color:#fff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    z-index:2;
+
+    backdrop-filter:blur(6px);
+
+}
+
+/* Lightbox navigation arrows */
+
+.lightbox-prev,
+.lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.lightbox-prev{
+
+    left:30px;
+
+}
+
+.lightbox-next{
+
+    right:30px;
+
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+
+    background:#F6D365;
+
+    color:#111;
+
+    border-color:#F6D365;
+
+}
+
+.lightbox-counter{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#fff;
+
+    font-size:14px;
+
+    background:rgba(0,0,0,.5);
+
+    padding:6px 16px;
+
+    border-radius:20px;
+
+    display:none;
+}
+
 /* =======================================
    Loader
 ======================================= */
