@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  repo: fluffistry/fluffistry
   branch: main
   base_url: https://fluffistry.vercel.app
   auth_endpoint: api/auth
@@ -24,7 +24,10 @@ collections:
               - {label: "Category", name: "category", widget: "select", options: ["Fursuit", "Reference Sheet"]}
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
-              - {label: "Image", name: "image", widget: "image"}
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: {label: "Image", name: "image", widget: "image"}
 
   - name: "pricing"
     label: "Pricing"
