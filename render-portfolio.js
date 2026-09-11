@@ -12,20 +12,38 @@ fetch("content/portfolio.json")
 
         if (!grid || !data.items) return;
 
-        // Normalize each item so it always has an "images" array,
-        // whether it was saved with the old single "image" field
-        // or the new multi-image "images" field.
+        // Normalize each item so it always has a clean "images" array of
+        // plain URL strings, no matter how the CMS saved it:
+        // - new multi-image field can save as ["url1","url2"] OR as
+        //   [{image:"url1"},{image:"url2"}] depending on CMS version
+        // - old single-image items only have "image": "url"
+        const PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23171717'/%3E%3C/svg%3E";
+
         const items = data.items.map((item) => {
             let images = item.images;
-            if (!images || !images.length) {
-                images = item.image ? [item.image] : [];
+
+            if (Array.isArray(images)) {
+                images = images
+                    .map((img) => (typeof img === "string" ? img : img && img.image))
+                    .filter(Boolean);
+            } else {
+                images = [];
             }
+
+            if (!images.length && item.image) {
+                images = [item.image];
+            }
+
+            if (!images.length) {
+                images = [PLACEHOLDER];
+            }
+
             return { ...item, images };
         });
 
         grid.innerHTML = items.map((item, i) => `
             <div class="gallery-card" data-index="${i}">
-                <img src="${item.images[0] || ''}" alt="${item.category}">
+                <img src="${item.images[0]}" alt="${item.category}" onerror="this.onerror=null;this.src='${PLACEHOLDER}';">
                 ${item.images.length > 1 ? `<span class="image-count">1 / ${item.images.length}</span>` : ""}
                 <div class="gallery-content">
                     <span>${item.category}</span>
