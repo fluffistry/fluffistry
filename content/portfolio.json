@@ -27,18 +27,12 @@
     {
       "category": "Fursuit",
       "title": "Kemono Fursuit ",
-      "description": ".",
+      "description": "..",
       "images": [
         "/images/inshot_20260819_021002242.jpg",
         "/images/inshot_20260819_021231263.jpg"
       ],
       "image": "/images/inshot_20260819_021231263.jpg"
-    },
-    {
-      "category": "Fursuit",
-      "title": "Fursuit",
-      "description": "..",
-      "image": "/images/inshot_20260819_021002242.jpg"
     }
   ]
 }
