@@ -2216,9 +2216,15 @@ body{
 
 .lightbox img{
 
-    max-width:90%;
+    max-width:min(90%, 1000px);
 
-    max-height:90%;
+    max-height:85vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
 
     border-radius:15px;
 
