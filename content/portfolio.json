@@ -40,7 +40,8 @@
       "description": "A sweet and fluffy autumn themed canine character, featuring soft cream-and-tan fur and a cozy pumpkin sweater",
       "images": [
         "/images/inshot_20260818_123535856.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260818_123535856.jpg"
     },
     {
       "category": "Reference Sheet",
@@ -48,7 +49,8 @@
         "/images/inshot_20260817_172131309.jpg"
       ],
       "title": "German Shepherd Fursona Reference Sheet ",
-      "description": "A quick visual guide to the German Shepherd’s anatomy, coat and key traits. Perfect for dog lovers"
+      "description": "A quick visual guide to the German Shepherd’s anatomy, coat and key traits. Perfect for dog lovers",
+      "image": "/images/inshot_20260817_172131309.jpg"
     },
     {
       "category": "Reference Sheet",
@@ -56,7 +58,8 @@
         "/images/inshot_20260817_172345669.jpg"
       ],
       "title": "Sakura — Pastel Unicorn Character Reference Sheet",
-      "description": "Meet Sakura, an anthropomorphic pastel blue unicorn with a flowing mint-green and pink mane. Her design features golden hooves, a golden horn, and faint yellow star speckles across her legs and face, set against a soft cherry blossom background."
+      "description": "Meet Sakura, an anthropomorphic pastel blue unicorn with a flowing mint-green and pink mane. Her design features golden hooves, a golden horn, and faint yellow star speckles across her legs and face, set against a soft cherry blossom background.",
+      "image": "/images/inshot_20260817_172345669.jpg"
     }
   ]
 }
