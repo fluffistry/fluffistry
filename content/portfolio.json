@@ -1,10 +1,13 @@
 {
   "items": [
     {
-      "category": "Fursuit",
-      "title": "Arctic Wolf",
-      "description": "A premium custom fursuit crafted with attention to detail, comfort, and realistic expression.",
-      "image": "/images/whatsapp-image-2025-01-25-at-5.57.15-pm.jpeg"
+      "category": "Reference Sheet",
+      "title": "Meet Lana ✨🦋",
+      "description": "Full character turnaround sheet for Lana, including front, back, and side-angle views, two expression headshots, and a complete color palette guide",
+      "image": "/images/whatsapp-image-2025-01-25-at-5.57.15-pm.jpeg",
+      "images": [
+        "/images/inshot_20261114_045902612.jpg"
+      ]
     },
     {
       "category": "Fursuit",
