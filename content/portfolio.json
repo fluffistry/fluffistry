@@ -70,7 +70,8 @@
         "/images/inshot_20260818_124106706.jpg"
       ],
       "title": "Void Dragon – Character Reference Sheet",
-      "description": "Meet Void Dragon, a 28-year-old bat-pony hybrid with a fiery mane and a glowing cybernetic leg"
+      "description": "Meet Void Dragon, a 28-year-old bat-pony hybrid with a fiery mane and a glowing cybernetic leg",
+      "image": "/images/inshot_20260818_124106706.jpg"
     },
     {
       "category": "Fursuit",
@@ -78,7 +79,8 @@
       "description": ".",
       "images": [
         "/images/inshot_20260819_021159064.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260819_003035437.jpg"
     },
     {
       "category": "Fursuit",
@@ -86,15 +88,17 @@
       "description": ".",
       "images": [
         "/images/inshot_20260819_021002242.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260912_145447229.jpg"
     },
     {
-      "category": "Reference Sheet",
+      "category": "Fursuit",
       "title": "😻",
       "description": ".",
       "images": [
         "/images/inshot_20260819_021231263.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260819_021002242.jpg"
     }
   ]
 }
