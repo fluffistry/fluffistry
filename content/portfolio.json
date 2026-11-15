@@ -115,7 +115,8 @@
       "description": " A complete character reference sheet featuring a white anthropomorphic wolf with icy blue fur accents and amber eyes. Includes full-body front and back views, a smiling headshot, and a six-tone color palette set against a teal grid background",
       "images": [
         "/images/inshot_20260817_172619412.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260817_172619412.jpg"
     },
     {
       "category": "Reference Sheet",
@@ -123,7 +124,8 @@
       "description": " Meet Tagalong, an energetic, winged dragon-canid hybrid with a warm tan and cream coat. Featuring curved ivory horns, striking cobalt-blue wing feathers, and matching blue paw pads, this reference sheet showcases Tag's full-body front and back views, color palette, and expressive personality",
       "images": [
         "/images/inshot_20260817_172507701.jpg"
-      ]
+      ],
+      "image": "/images/inshot_20260817_172507701.jpg"
     }
   ]
 }
